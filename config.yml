@@ -1,0 +1,6 @@
+server:
+  port: 3000
+
+paths:
+  employeeCsv: './uploads/employees.csv'
+  previousAssignmentsCsv: './uploads/previous.csv'
