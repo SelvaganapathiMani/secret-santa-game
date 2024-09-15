@@ -6,6 +6,10 @@ This application allows users to upload CSV files containing employee details an
 
 The project uses Vue.js for the frontend and Node.js for the backend, and follows Test-Driven Development (TDD) principles.
 
+### Result
+1. **Home Page**
+ ![Home Page](https://github.com/SelvaganapathiMani/secret-santa-game/blob/main/output_images/home_page.png)
+
 ## Features
 
 - Upload CSV files for employees and previous Secret Santa assignments.
@@ -38,14 +42,15 @@ The project uses Vue.js for the frontend and Node.js for the backend, and follow
 
 2. **Install Dependencies**
 
-   ```bash
-   cd 
-   npm install
-
-   ```bash
-   cd ../backend
-   npm install
-
+    ```bash
+    cd 
+    npm install
+    ``` 
+    
+    ```bash
+    cd ../backend
+    npm install
+    ````
 ### Configuration
 
 #### Frontend Configuration
