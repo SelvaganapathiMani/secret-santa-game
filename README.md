@@ -7,8 +7,15 @@ This application allows users to upload CSV files containing employee details an
 The project uses Vue.js for the frontend and Node.js for the backend, and follows Test-Driven Development (TDD) principles.
 
 ### Result
-1. **Home Page**
- ![Home Page](https://github.com/SelvaganapathiMani/secret-santa-game/blob/main/output_images/home_page.png)
+1. **Home Page Image**
+ ![Home Page](https://raw.githubusercontent.com/SelvaganapathiMani/secret-santa-game/main/output_images/home_page.png)
+
+2. **Input image**
+ ![Input Image](https://raw.githubusercontent.com/SelvaganapathiMani/secret-santa-game/main/output_images/input_result_image.png)
+3. **Result Image**
+ ![Result Image](https://raw.githubusercontent.com/SelvaganapathiMani/secret-santa-game/main/output_images/final_image.png)
+4. **Validation Image**
+ ![Validation Image](https://raw.githubusercontent.com/SelvaganapathiMani/secret-santa-game/main/output_images/validation_image.png)
 
 ## Features
 
@@ -43,10 +50,10 @@ The project uses Vue.js for the frontend and Node.js for the backend, and follow
 2. **Install Dependencies**
 
     ```bash
-    cd 
+    cd secret-santa-ui
     npm install
     ``` 
-    
+
     ```bash
     cd ../backend
     npm install
@@ -77,7 +84,7 @@ The backend server will be running on http://localhost:3000.
 ### Start the Frontend Development Server
 
   ``` bash
-  cd frontend
+  cd secret-santa-ui
   npm run serve
   ```
 
@@ -94,7 +101,7 @@ The frontend will be running on http://localhost:8080.
 ### Running Tests
 1. **Frontend Tests**
     ```bash
-    cd frontend
+    cd secret-santa-ui
     npm run test:unit
     ```
 2. **Backend Tests**
