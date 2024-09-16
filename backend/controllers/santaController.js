@@ -7,19 +7,18 @@ function assignSecretSantas(employees, previousAssignments) {
   let available = [...employees];
   let assignments = [];
   
-  console.log("current year",employees)
-  console.log("last year",previousAssignments)
-
   employees.forEach(employee => {
-
-  console.log(employee.Employee_Name)
+    if (employee.Employee_Blocked == 'TRUE') {
+      console.log(`BLOCKED EMPLOYE ${employee.Employee_Name}`)
+      return true
+    }
     // Filter potential children, excluding the employee themselves and last year's assignment
     const potentialChildren = available.filter(child =>
-      child.Employee_Name !== employee.Employee_Name && 
-      !previousAssignments.some(a => a.Secret_Child_Name === child.Employee_Name && a.Employee_Name === employee.Employee_Name)
+      child.Employee_Blocked == 'FALSE' &&
+      child.Employee_EmailID !== employee.Employee_EmailID && 
+      !previousAssignments.some(a => a.Secret_Child_EmailID === child.Employee_EmailID && a.Secret_Child_EmailID === employee.Employee_EmailID)
     );
 
-    console.log(potentialChildren)
 
       if (potentialChildren.length === 0) {
           throw new Error(`No valid assignments possible for ${employee.Employee_Name}`);
